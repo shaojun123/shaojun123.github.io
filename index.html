@@ -426,6 +426,322 @@
 
 
   
+    <article id="post-web前端笔记之JS（六）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/25/web前端笔记之JS（六）/">web前端笔记之JS（六）</a>
+    </h1>
+  
+
+        
+        <a href="/2016/03/25/web前端笔记之JS（六）/" class="archive-article-date">
+  	<time datetime="2016-03-25T04:59:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/2016/03/25/web前端笔记之JS（六）/J6.jpg" alt="guge"></p>
+<h3 id="动态操作DOM元素"><a href="#动态操作DOM元素" class="headerlink" title="动态操作DOM元素"></a>动态操作DOM元素</h3><blockquote>
+<p>创建元素 <strong>document.createElement(“div”)</strong>;<br>创建文本 <strong>document.createTextNode(“123”)</strong>;<br>元素末尾添加子节点   <strong>父节点.appendChild</strong><br>插入  <strong>父节点.insertBefore(newEle,oldEle)</strong>;<br>替换  <strong>父节点.replaceChild(newEle,oldEle)</strong>;<br>删除  <strong>父节点.removeChild(ele)</strong>;<br>克隆   <strong>ele.cloneNode(true)</strong>;<br><strong>true</strong> 表示把所有的后代都克隆 深克隆<br>不写或false 表示只克隆元素本身<br></p></blockquote>
+        
+          <a class="article-more-a" href="/2016/03/25/web前端笔记之JS（六）/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/03/25/web前端笔记之JS（六）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-web前端笔记之JS（五）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/24/web前端笔记之JS（五）/">web前端笔记之JS（五）</a>
+    </h1>
+  
+
+        
+        <a href="/2016/03/24/web前端笔记之JS（五）/" class="archive-article-date">
+  	<time datetime="2016-03-24T09:50:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/2016/03/24/web前端笔记之JS（五）/J5.jpg" alt="guge"></p>
+<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><blockquote>
+<p>方法 自己调用自己（重复执行方法里的功能）<br>1.在方法内部调用自己的方法写在return后面<br>2.设置边界条件，让递归调用停下来<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params">num</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(num);</span><br><span class="line">    <span class="keyword">if</span> (num===<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125; </span><br><span class="line">    fn(num<span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line">fn(<span class="number">10</span>);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2016/03/24/web前端笔记之JS（五）/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/03/24/web前端笔记之JS（五）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-web前端笔记之JS（四）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/23/web前端笔记之JS（四）/">web前端笔记之JS（四）</a>
+    </h1>
+  
+
+        
+        <a href="/2016/03/23/web前端笔记之JS（四）/" class="archive-article-date">
+  	<time datetime="2016-03-23T04:46:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/2016/03/23/web前端笔记之JS（四）/J4.jpg" alt="guge"></p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><blockquote>
+<p>数组是<strong>对象数据类型</strong>，只能以<strong>[ ]</strong>的方式获取</p>
+</blockquote>
+<h4 id="数组的定义方式"><a href="#数组的定义方式" class="headerlink" title="数组的定义方式"></a>数组的定义方式</h4><blockquote>
+<p>1.var arr = [ ] 字面量的方式<br>2.var arr = new Array() 构造函数的方式<br>有index索引 有length长度<br>获取数组最后一项 length-1<br>一次性获取数组中的每一项(2种方法)<br>for in循环 for循环<br></p></blockquote>
+        
+          <a class="article-more-a" href="/2016/03/23/web前端笔记之JS（四）/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/03/23/web前端笔记之JS（四）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-web前端笔记之JS（三）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/22/web前端笔记之JS（三）/">web前端笔记之JS（三）</a>
+    </h1>
+  
+
+        
+        <a href="/2016/03/22/web前端笔记之JS（三）/" class="archive-article-date">
+  	<time datetime="2016-03-22T07:39:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/2016/03/22/web前端笔记之JS（三）/J3.jpg" alt="guge"></p>
+<h3 id="函数的形参和实参"><a href="#函数的形参和实参" class="headerlink" title="函数的形参和实参"></a>函数的形参和实参</h3><blockquote>
+<h4 id="形参"><a href="#形参" class="headerlink" title="形参"></a>形参</h4><p><strong>函数的入口</strong><br>形参没有实参赋值 undefined<br>形参属于私有变量 只存在当前作用域下<br></p></blockquote>
+        
+          <a class="article-more-a" href="/2016/03/22/web前端笔记之JS（三）/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/03/22/web前端笔记之JS（三）/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-web前端笔记之JS（二）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -584,321 +900,9 @@
 
 
   
-    <article id="post-web前端笔记之移动端（三）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/17/web前端笔记之移动端（三）/">web前端笔记之移动端（三）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/17/web前端笔记之移动端（三）/" class="archive-article-date">
-  	<time datetime="2016-03-17T12:22:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/17/web前端笔记之移动端（三）/Y3.jpg" alt="guge"></p>
-<h3 id="H5新增type类型"><a href="#H5新增type类型" class="headerlink" title="H5新增type类型"></a>H5新增type类型</h3><blockquote>
-<p>&lt; input type=”<strong>number</strong>“  <strong>step</strong>=”3”&gt; 数字  step步长<br>&lt; input type=”<strong>date</strong>“ &gt;   日期<br>&lt; input type=”<strong>tel</strong>“ &gt;       电话<br>&lt; input type=”<strong>email</strong>“ &gt;  邮件<br>&lt; input type=”<strong>search</strong>“ &gt;搜索<br> &lt; input type=”<strong>color</strong>“ &gt;调色板<br><strong>background-clip</strong> 规定背景的绘制区域<br><strong>border-box</strong> 默认值 背景从边框部分开始绘制<br><strong>padding-box</strong> 背景从内边距部分开始绘制<br><strong>content-box</strong> 背景从内容区开始绘制<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/17/web前端笔记之移动端（三）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">移动端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/17/web前端笔记之移动端（三）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之移动端（二）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/16/web前端笔记之移动端（二）/">web前端笔记之移动端（二）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/16/web前端笔记之移动端（二）/" class="archive-article-date">
-  	<time datetime="2016-03-16T11:53:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/16/web前端笔记之移动端（二）/Y2.jpg" alt="guge"></p>
-<h3 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h3><blockquote>
-<p>一个网站能够兼容多个终端，在各个终端有很好的展示体验<br><strong>媒体查询 @media</strong><br><strong>媒体类型 </strong><br><strong>all</strong> 针对所有设备<br><strong>screen</strong> 针对PC端，手机，电脑，平板<br><strong>print</strong> 用于打印机 pu run t<br><strong>speech</strong> 用于屏幕阅读发声设备<br><strong>@media mediatype and |not |only ()</strong><br><strong>and</strong> 并且的意思<br><strong>not</strong>  除了什么情况<br><strong>only</strong> 仅仅在什么情况下<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/16/web前端笔记之移动端（二）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">移动端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/16/web前端笔记之移动端（二）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之移动端（一）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/15/web前端笔记之移动端（一）/">web前端笔记之移动端（一）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/15/web前端笔记之移动端（一）/" class="archive-article-date">
-  	<time datetime="2016-03-15T11:47:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/15/web前端笔记之移动端（一）/Y1.jpg" alt="guge"></p>
-<h3 id="H5新增标签"><a href="#H5新增标签" class="headerlink" title="H5新增标签"></a>H5新增标签</h3><blockquote>
-<p>&lt; header&gt;头部&lt; /header&gt;<br>&lt; section&gt;区分大模块&lt; /section&gt;<br>&lt; article&gt;文章内容&lt; /aeticle&gt;<br>&lt; nav&gt;导航&lt; /nav&gt;<br>&lt; footer&gt;底部&lt; /footer&gt;<br>&lt; figure&gt; 配图<br>   &lt; img src=”” alt=”” /&gt;<br>   &lt; figction&gt;配图说明&lt; /figction&gt;<br>&lt; /figure&gt;<br>audio 音频 video 视频<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/15/web前端笔记之移动端（一）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">移动端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/15/web前端笔记之移动端（一）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之CSS（六）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/14/web前端笔记之CSS（六）/">web前端笔记之CSS（六）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/14/web前端笔记之CSS（六）/" class="archive-article-date">
-  	<time datetime="2016-03-14T11:40:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/14/web前端笔记之CSS（六）/C6.jpg" alt="guge"></p>
-<h3 id="BFC（块级格式化上下文）"><a href="#BFC（块级格式化上下文）" class="headerlink" title="BFC（块级格式化上下文）"></a>BFC（块级格式化上下文）</h3><blockquote>
-<p>可以形成一个封闭的区域，他里面的内容不会影响到外面的元素<br>根元素，即HTML元素<br><strong>如何触发BFC?</strong><br>默认情况下叫 FC<br>HTML根元素就是一个BFC<br>1.float值为left或者right时，可以触发BFC<br>2.overflow值为hidden时，可以触发BFC<br>3.display为inline-block时可以触发BFC<br>4.positon值为absolute或者fixed时可以触发BFC<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/14/web前端笔记之CSS（六）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/14/web前端笔记之CSS（六）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 

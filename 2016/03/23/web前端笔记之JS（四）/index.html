@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://www.91xuqi.com">
-  <title>Xuqi&#39;s Blog</title>
+  <title>web前端笔记之JS（四） | Xuqi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Xuqi&#39;s Blog">
-<meta property="og:url" content="http://www.91xuqi.com/page/2/index.html">
+  <meta name="description" content="数组 数组是对象数据类型，只能以[ ]的方式获取  数组的定义方式 1.var arr = [ ] 字面量的方式2.var arr = new Array() 构造函数的方式有index索引 有length长度获取数组最后一项 length-1一次性获取数组中的每一项(2种方法)for in循环 for循环">
+<meta name="keywords" content="JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web前端笔记之JS（四）">
+<meta property="og:url" content="http://www.91xuqi.com/2016/03/23/web前端笔记之JS（四）/index.html">
 <meta property="og:site_name" content="Xuqi&#39;s Blog">
+<meta property="og:description" content="数组 数组是对象数据类型，只能以[ ]的方式获取  数组的定义方式 1.var arr = [ ] 字面量的方式2.var arr = new Array() 构造函数的方式有index索引 有length长度获取数组最后一项 length-1一次性获取数组中的每一项(2种方法)for in循环 for循环">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://www.91xuqi.com/2016/03/23/web前端笔记之JS（四）/J4.jpg">
+<meta property="og:updated_time" content="2018-11-28T04:55:33.608Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xuqi&#39;s Blog">
+<meta name="twitter:title" content="web前端笔记之JS（四）">
+<meta name="twitter:description" content="数组 数组是对象数据类型，只能以[ ]的方式获取  数组的定义方式 1.var arr = [ ] 字面量的方式2.var arr = new Array() 构造函数的方式有index索引 有length长度获取数组最后一项 length-1一次性获取数组中的每一项(2种方法)for in循环 for循环">
+<meta name="twitter:image" content="http://www.91xuqi.com/2016/03/23/web前端笔记之JS（四）/J4.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Xuqi&#39;s Blog" type="application/atom+xml">
   
@@ -144,666 +151,83 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-web前端笔记之移动端（三）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+            <article id="post-web前端笔记之JS（四）" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/17/web前端笔记之移动端（三）/">web前端笔记之移动端（三）</a>
+    <h1 class="article-title" itemprop="name">
+      web前端笔记之JS（四）
     </h1>
   
 
         
-        <a href="/2016/03/17/web前端笔记之移动端（三）/" class="archive-article-date">
-  	<time datetime="2016-03-17T12:22:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-17</time>
+        <a href="/2016/03/23/web前端笔记之JS（四）/" class="archive-article-date">
+  	<time datetime="2016-03-23T04:46:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/2016/03/17/web前端笔记之移动端（三）/Y3.jpg" alt="guge"></p>
-<h3 id="H5新增type类型"><a href="#H5新增type类型" class="headerlink" title="H5新增type类型"></a>H5新增type类型</h3><blockquote>
-<p>&lt; input type=”<strong>number</strong>“  <strong>step</strong>=”3”&gt; 数字  step步长<br>&lt; input type=”<strong>date</strong>“ &gt;   日期<br>&lt; input type=”<strong>tel</strong>“ &gt;       电话<br>&lt; input type=”<strong>email</strong>“ &gt;  邮件<br>&lt; input type=”<strong>search</strong>“ &gt;搜索<br> &lt; input type=”<strong>color</strong>“ &gt;调色板<br><strong>background-clip</strong> 规定背景的绘制区域<br><strong>border-box</strong> 默认值 背景从边框部分开始绘制<br><strong>padding-box</strong> 背景从内边距部分开始绘制<br><strong>content-box</strong> 背景从内容区开始绘制<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/17/web前端笔记之移动端（三）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">移动端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/17/web前端笔记之移动端（三）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之移动端（二）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/16/web前端笔记之移动端（二）/">web前端笔记之移动端（二）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/16/web前端笔记之移动端（二）/" class="archive-article-date">
-  	<time datetime="2016-03-16T11:53:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/16/web前端笔记之移动端（二）/Y2.jpg" alt="guge"></p>
-<h3 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h3><blockquote>
-<p>一个网站能够兼容多个终端，在各个终端有很好的展示体验<br><strong>媒体查询 @media</strong><br><strong>媒体类型 </strong><br><strong>all</strong> 针对所有设备<br><strong>screen</strong> 针对PC端，手机，电脑，平板<br><strong>print</strong> 用于打印机 pu run t<br><strong>speech</strong> 用于屏幕阅读发声设备<br><strong>@media mediatype and |not |only ()</strong><br><strong>and</strong> 并且的意思<br><strong>not</strong>  除了什么情况<br><strong>only</strong> 仅仅在什么情况下<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/16/web前端笔记之移动端（二）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">移动端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/16/web前端笔记之移动端（二）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之移动端（一）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/15/web前端笔记之移动端（一）/">web前端笔记之移动端（一）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/15/web前端笔记之移动端（一）/" class="archive-article-date">
-  	<time datetime="2016-03-15T11:47:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/15/web前端笔记之移动端（一）/Y1.jpg" alt="guge"></p>
-<h3 id="H5新增标签"><a href="#H5新增标签" class="headerlink" title="H5新增标签"></a>H5新增标签</h3><blockquote>
-<p>&lt; header&gt;头部&lt; /header&gt;<br>&lt; section&gt;区分大模块&lt; /section&gt;<br>&lt; article&gt;文章内容&lt; /aeticle&gt;<br>&lt; nav&gt;导航&lt; /nav&gt;<br>&lt; footer&gt;底部&lt; /footer&gt;<br>&lt; figure&gt; 配图<br>   &lt; img src=”” alt=”” /&gt;<br>   &lt; figction&gt;配图说明&lt; /figction&gt;<br>&lt; /figure&gt;<br>audio 音频 video 视频<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/15/web前端笔记之移动端（一）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">移动端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/15/web前端笔记之移动端（一）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之CSS（六）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/14/web前端笔记之CSS（六）/">web前端笔记之CSS（六）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/14/web前端笔记之CSS（六）/" class="archive-article-date">
-  	<time datetime="2016-03-14T11:40:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/14/web前端笔记之CSS（六）/C6.jpg" alt="guge"></p>
-<h3 id="BFC（块级格式化上下文）"><a href="#BFC（块级格式化上下文）" class="headerlink" title="BFC（块级格式化上下文）"></a>BFC（块级格式化上下文）</h3><blockquote>
-<p>可以形成一个封闭的区域，他里面的内容不会影响到外面的元素<br>根元素，即HTML元素<br><strong>如何触发BFC?</strong><br>默认情况下叫 FC<br>HTML根元素就是一个BFC<br>1.float值为left或者right时，可以触发BFC<br>2.overflow值为hidden时，可以触发BFC<br>3.display为inline-block时可以触发BFC<br>4.positon值为absolute或者fixed时可以触发BFC<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/14/web前端笔记之CSS（六）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/14/web前端笔记之CSS（六）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之CSS（五）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/13/web前端笔记之CSS（五）/">web前端笔记之CSS（五）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/13/web前端笔记之CSS（五）/" class="archive-article-date">
-  	<time datetime="2016-03-13T03:57:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/13/web前端笔记之CSS（五）/C5.jpg" alt="guge"></p>
-<h3 id="背景常用属性"><a href="#背景常用属性" class="headerlink" title="背景常用属性"></a>背景常用属性</h3><h3 id="background-color-背景颜色"><a href="#background-color-背景颜色" class="headerlink" title="background-color 背景颜色"></a>background-color 背景颜色</h3><blockquote>
-<p>属性值有三种书写方式<br>第一种：<strong>关键字法</strong>（不常用）<br>第二种：<strong>十六进制法</strong> 常用<br>第三种：<strong>rgb</strong>(0~255,0~255,0~255)<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/13/web前端笔记之CSS（五）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/13/web前端笔记之CSS（五）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之CSS（四）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/12/web前端笔记之CSS（四）/">web前端笔记之CSS（四）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/12/web前端笔记之CSS（四）/" class="archive-article-date">
-  	<time datetime="2016-03-12T13:54:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/12/web前端笔记之CSS（四）/C4.jpg" alt="guge"></p>
-<h3 id="单行文本溢出显示省略号"><a href="#单行文本溢出显示省略号" class="headerlink" title="单行文本溢出显示省略号"></a>单行文本溢出显示省略号</h3><blockquote>
-<p>必备条件：必须设置固定的宽度<br><strong>white-space:nowrap</strong> 让文本显示在一行（文本不可以折行）<br><strong>overflow:hidden</strong> 溢出隐藏<br><strong>text-overflow:ellipsis</strong> 溢出隐藏的文本用省略号显示<br><strong>border-collapse:collapse</strong> 合并表格边框<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/12/web前端笔记之CSS（四）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/12/web前端笔记之CSS（四）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之CSS（三）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/11/web前端笔记之CSS（三）/">web前端笔记之CSS（三）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/11/web前端笔记之CSS（三）/" class="archive-article-date">
-  	<time datetime="2016-03-11T11:41:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/11/web前端笔记之CSS（三）/C3.jpg" alt="guge"></p>
-<h3 id="CSS文本类属性"><a href="#CSS文本类属性" class="headerlink" title="CSS文本类属性"></a>CSS文本类属性</h3><blockquote>
-<p><strong>text-indent</strong> 首行缩进    单位 em 1em=1个字符的大小<br><strong>color</strong> 设置字体颜色<br>英文字母 例如red,yellow<br>红 黄 蓝 （美术里的三原色）<br>红 绿 蓝 （光学三原色）R G B<br>十六进制法<br>color:#FF000<br> RGB法<br>rgb(255,0,0)<br><strong>letter-spacing</strong> 设置字符间距 单位px,em<br><strong>word-spacing</strong> 字间距<br><strong>line-height</strong>      设置是文本行高<br><strong>text-align</strong>        文本对齐方式 常用值 left 左对齐 center文本居中对齐 right 右对齐<br><strong>text-decoration</strong> underline 线在下面   line-through删除线  overline 线在上面<br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/11/web前端笔记之CSS（三）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/11/web前端笔记之CSS（三）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之CSS（二）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/10/web前端笔记之CSS（二）/">web前端笔记之CSS（二）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/10/web前端笔记之CSS（二）/" class="archive-article-date">
-  	<time datetime="2016-03-10T01:10:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/10/web前端笔记之CSS（二）/C2.jpg" alt="guge"></p>
-<h3 id="HTML元素分类"><a href="#HTML元素分类" class="headerlink" title="HTML元素分类"></a>HTML元素分类</h3><h4 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h4><blockquote>
-<p>1.块级元素独占一行<br>2.排列方式从上到下<br>3.可以设置宽高以及盒子模型的其他属性<br>4.在不设置宽高的情况下，它的宽是父级元素的宽，高度是它本身的高度<br>5.块级元素可以嵌套其他元素<br>6.P标签不能嵌套它本身<br>7.dt不能嵌套其他标签<br><strong>P，h1~h6，div，ul，ol，li,dl&gt;dt&gt;dd，table，form</strong><br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/10/web前端笔记之CSS（二）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/10/web前端笔记之CSS（二）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-web前端笔记之CSS（一）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/09/web前端笔记之CSS（一）/">web前端笔记之CSS（一）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/09/web前端笔记之CSS（一）/" class="archive-article-date">
-  	<time datetime="2016-03-09T12:51:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/09/web前端笔记之CSS（一）/C1.jpg" alt="guge"></p>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><blockquote>
-<p>css is <strong>样式层 </strong><br>全称<strong>层叠样式表</strong><br>Cascading style sheet</p>
+        <p><img src="/2016/03/23/web前端笔记之JS（四）/J4.jpg" alt="guge"></p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><blockquote>
+<p>数组是<strong>对象数据类型</strong>，只能以<strong>[ ]</strong>的方式获取</p>
 </blockquote>
-<h3 id="css作用"><a href="#css作用" class="headerlink" title="css作用"></a>css作用</h3><blockquote>
-<p>美化HTML结构</p>
+<h4 id="数组的定义方式"><a href="#数组的定义方式" class="headerlink" title="数组的定义方式"></a>数组的定义方式</h4><blockquote>
+<p>1.var arr = [ ] 字面量的方式<br>2.var arr = new Array() 构造函数的方式<br>有index索引 有length长度<br>获取数组最后一项 length-1<br>一次性获取数组中的每一项(2种方法)<br>for in循环 for循环<br><a id="more"></a></p>
 </blockquote>
-<h3 id="css引入方式"><a href="#css引入方式" class="headerlink" title="css引入方式"></a>css引入方式</h3><blockquote>
-<p><strong>行内式 </strong><br>直接在标签行内写的样式<br><strong>内嵌式</strong><br></p></blockquote>
-        
-          <a class="article-more-a" href="/2016/03/09/web前端笔记之CSS（一）/#more">more >></a>
-        
+<h4 id="数组的方法"><a href="#数组的方法" class="headerlink" title="数组的方法"></a>数组的方法</h4><p><strong>原有数组发生改变</strong>：<br>1.<strong>push</strong> 末尾新增<br>参数：添加的内容<br>返回值：添加内容后数组的长度<br>2.<strong>unshift</strong> 开头新增<br>参数：添加的内容<br>返回值：添加内容后数组的长度<br>3.<strong>pop</strong> 末尾删除<br>参数：无<br>返回值：删除的内容<br>4.<strong>shift</strong> 开头删除<br>参数：无<br>返回值：删除的内容<br>5.<strong>splice</strong> 删除某几项<br><code>splice (n)</code> 从索引n开始删除到最后(包含n)<br>返回值：将删除的内容放在一个新数组中返回<br><code>splice(n,m)</code> 从索引n开始，删除m个<br>返回值：将删除的内容放在一个新数组中返回<br><code>splice(n,m,x)</code>从索引n开始，删除m个，用x的内容代替删除的内容<br>参数：3个或3个以上<br><code>splice(n,0,x)</code>在索引n之前添加内容<br>返回值：[ ]<br>6.<strong>reverse</strong> 数组颠倒<br>返回值：反向排列后的数组<br>7.<strong>sort</strong> 数组排序<br>参数：可以不传或传函数的定义<br>只能对10以内的数字进行排序<br>对10以外排序进行传参；<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ary = [<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>];</span><br><span class="line"><span class="keyword">var</span> res = ary.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a,b</span>)</span>&#123;</span><br><span class="line">       <span class="keyword">return</span> a-b; 从大到小</span><br><span class="line">       <span class="keyword">return</span> b-a; 从小到大</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>原有数组不发生改变：<br>8.<strong>tostring</strong> 将数组转换成字符串<br>9.<strong>join</strong> 将数组按照特定字符拼接成字符串<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ary = [<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>];</span><br><span class="line">ary.join(<span class="string">"+"</span>)  <span class="string">"10+11+12+13+14+15"</span></span><br><span class="line">ary.join(<span class="string">""</span>)    <span class="string">"101112131415"</span></span><br><span class="line">ary.join( ) <span class="string">"10,11,12,13,14,15"</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>eval</strong> 全局下的方法，将字符串转换成JS代码执行<br>10.<strong>concat</strong> 数组拼接<br>返回值：返回合并后的数组<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ary = [<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>];</span><br><span class="line">ary.concat(<span class="number">8</span>,&#123;<span class="attr">name</span>:<span class="string">"Junshao"</span>&#125;);</span><br><span class="line">ary.concat();</span><br></pre></td></tr></table></figure></p>
+<p>没传参表示克隆<br>11.<strong>slice</strong> 数组截取<br>参数：一个或两个<br><code>slice(n)</code> 从索引n截取到最后<br><code>slice(n,m)</code> 从索引n截取到索引m（抱前不抱后）<br><code>var ary = [10,11,12,13,14,15];</code><br>ary.slice(-3 ,-1); 倒数第三项 到 倒数第一项 （13,14）<br>12.<strong>indexOf</strong> 检测第一次出现的位置<br>没有返回-1<br><code>indexOf(n,m)</code> 从索引m开始，查找n<br>13.<strong>lastindexOf</strong> 检测最后一次出现的位置 没有返回-1</p>
+<h4 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h4><blockquote>
+<p>1.两两比较  <strong>双循环遍历法</strong><br>将数组中的每一项分别和后面所有项进行比较，若有重复的则把重复项删除<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ary = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">7</span>,<span class="number">7</span>,<span class="number">7</span>,<span class="number">8</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; ary.length<span class="number">-1</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> cur = ary[i];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> j = i+<span class="number">1</span>; j &lt; ary.length; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (cur === ary[j]) &#123;</span><br><span class="line">            ary.splice(j,<span class="number">1</span>);</span><br><span class="line">            j --;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(ary);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>数组塌陷问题<br>使用splice把当前项在原有数组删除之后<br>被删除项的后一项的索引向前提一位</p>
+<blockquote>
+<p>2.<strong>对象键值对法</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ary = [<span class="number">10</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">10</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; ary.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> cur = ary[i];</span><br><span class="line">    <span class="keyword">if</span> (obj[cur]===cur)&#123;</span><br><span class="line">        ary.splice(i,<span class="number">1</span>);</span><br><span class="line">        i--;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        obj[cur] = cur;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(ary);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p><strong>冒泡排序</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ary = [<span class="number">7</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; ary.length<span class="number">-1</span>; j++) &#123; <span class="comment">//轮数</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; ary.length<span class="number">-1</span>-j; i++) &#123; <span class="comment">//次数</span></span><br><span class="line">        <span class="keyword">if</span> (ary[i]&gt;ary[i+<span class="number">1</span>])&#123;</span><br><span class="line">            <span class="keyword">var</span> temp = ary[i];</span><br><span class="line">            ary[i] = ary[i+<span class="number">1</span>];</span><br><span class="line">            ary[i+<span class="number">1</span>] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(ary);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="字符串的方法"><a href="#字符串的方法" class="headerlink" title="字符串的方法"></a>字符串的方法</h4><p>1.<strong>charAt</strong>  通过索引获取字符<br>2.<strong>charCodeAt</strong> 通过索引过去对应字符的Unicode编码<br>截取字符串的方法<br>3.<strong>substr(n,m)</strong> 从索引n开始，截取m个<br>4.<strong>subString(n,m)</strong> 从索引 n 截取到索引 m (抱前不抱后)<br>5.<strong>slice(n,m)</strong> 从索引 n 截取到索引 m (抱前不抱后）支持负数索引<br>6.<strong>split</strong> 把字符串分割成字符串数组<br><code>var str = &quot;2018-08-28&quot;;
+str.split(&quot;-&quot;)   str.split(&quot;&quot;)  str.split()</code><br>7.<strong>toUpperCase</strong> 全部转换成大写<br>8.<strong>toLowerCase</strong> 全部转换成小写<br>9.<strong>indexOf</strong>  检测字符串第一次出现的索引位置 不存在返回-1<br>10.<strong>lastindexOf</strong> 检测字符串最后一次出现的索引位置 不存在返回-1<br>11.<strong>replace</strong> 替换 原有字符串不变，用新字符替换旧字符 replace(oldstr,newstr);<br><code>var date = &quot;2018-08-28 17:54:30&quot;;</code></p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -814,7 +238,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JS</a>
         		</li>
       		
 		</ul>
@@ -823,16 +247,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/09/web前端笔记之CSS（一）/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.91xuqi.com/2016/03/23/web前端笔记之JS（四）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/03/24/web前端笔记之JS（五）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          web前端笔记之JS（五）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/03/22/web前端笔记之JS（三）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">web前端笔记之JS（三）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -852,94 +344,14 @@
 
 
 
-
-  
-    <article id="post-web前端笔记之HTML（二）" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/08/web前端笔记之HTML（二）/">web前端笔记之HTML（二）</a>
-    </h1>
-  
-
-        
-        <a href="/2016/03/08/web前端笔记之HTML（二）/" class="archive-article-date">
-  	<time datetime="2016-03-08T11:31:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-03-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2016/03/08/web前端笔记之HTML（二）/二.jpg" alt="guge"></p>
-<h3 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h3><ul>
-<li><p><strong>P标签</strong><br>段落<br>特性：独占一行</p>
-</li>
-<li><p><strong>H标签</strong><br>标题<br>特性：1.独占一行   2.H1~H6 由大到小  3.加粗</p>
-</li>
-<li><p><strong>Strong标签</strong><br>作用：加粗，强调</p></li></ul>
-        
-          <a class="article-more-a" href="/2016/03/08/web前端笔记之HTML（二）/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/03/08/web前端笔记之HTML（二）/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -962,8 +374,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

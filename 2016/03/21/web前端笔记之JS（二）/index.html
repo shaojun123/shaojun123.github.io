@@ -17,7 +17,7 @@
 <meta property="og:description" content="变量的存储 stack 栈内存heep  堆内存  浏览器在拿到一个JS文件时，先开辟一个全局作用域浏览器自上而下执行JS代码(之前有一步 预解释/变量提升)">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.91xuqi.com/2016/03/21/web前端笔记之JS（二）/J2.jpg">
-<meta property="og:updated_time" content="2018-11-28T04:22:58.993Z">
+<meta property="og:updated_time" content="2018-11-28T04:57:31.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="web前端笔记之JS（二）">
 <meta name="twitter:description" content="变量的存储 stack 栈内存heep  堆内存  浏览器在拿到一个JS文件时，先开辟一个全局作用域浏览器自上而下执行JS代码(之前有一步 预解释/变量提升)">
@@ -177,11 +177,11 @@
 </blockquote>
 <p>浏览器在拿到一个JS文件时，先开辟一个全局作用域<br>浏览器自上而下执行JS代码(之前有一步 预解释/变量提升)<br><a id="more"></a></p>
 <p><strong>遇到基本数据类型时</strong><br>1.直接在globle作用域内存里面存储字符串 xx<br>2.识别变量 a<br>3.将变量a和存储的值联系起来<br><strong>遇到引用数据类型时</strong><br>1.新开辟一个私有的作用域空间，将内容以字符串形式存储<br>2.将这个空间命名 “aaacccxxx”<br>3.将这个空间名赋给变量</p>
-<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var ary = [ &quot;&quot;,23,&quot;17&quot;,&#123;&#125;,77 ];</span><br></pre></td></tr></table></figure>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ary = [ <span class="string">""</span>,<span class="number">23</span>,<span class="string">"17"</span>,&#123;&#125;,<span class="number">77</span> ];</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>length 长度 数组里面值的个数<br>index  索引 从0开始 逐级递加<br>数组里面的数是任意的</p>
 </blockquote>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var fn = function()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">fn();</span><br><span class="line">function 函数名()&#123;   </span><br><span class="line">   函数体里面的内容（实现一个功能具体的逻辑）</span><br><span class="line">&#125;</span><br><span class="line">函数名();</span><br></pre></td></tr></table></figure>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fn = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">fn();</span><br><span class="line"><span class="function"><span class="keyword">function</span> 函数名(<span class="params"></span>)</span>&#123;   </span><br><span class="line">   函数体里面的内容（实现一个功能具体的逻辑）</span><br><span class="line">&#125;</span><br><span class="line">函数名();</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>参数可以是多个0个一个<br>方法执行时候传参也是任意数量<br>方法执行时传的参数和方法的是参数是一一对应的</p>
 </blockquote>
@@ -198,9 +198,9 @@
 = = 比较 返回一个布尔值
 = = = 绝对比较 不会进行数据类型转换 只要数据类型不同就是false
 NaN==NaN    false</code></p>
-<h4 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(true)&#123; </span><br><span class="line">console(&quot;条件成立&quot;)</span><br><span class="line">&#125;else（）&#123;</span><br><span class="line"> console(&quot;条件不成立&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="if-else"><a href="#if-else" class="headerlink" title="if else"></a>if else</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123; </span><br><span class="line"><span class="built_in">console</span>(<span class="string">"条件成立"</span>)</span><br><span class="line">&#125;<span class="keyword">else</span>（）&#123;</span><br><span class="line"> <span class="built_in">console</span>(<span class="string">"条件不成立"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>条件里会先转化为布尔值在进行判断 成立执行 不成立继续向下走</p>
-<h3 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">条件？条件成立执行：条件不成立执行；</span><br></pre></td></tr></table></figure>
+<h3 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">条件？条件成立执行：条件不成立执行；</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>i++</strong> 先取值在运算<br><strong>++i</strong> 先运算在取值</p>
 </blockquote>
@@ -318,11 +318,11 @@ NaN==NaN    false</code></p>
   
 <nav id="article-nav">
   
-    <a href="/2017/03/27/啥玩意儿？这个前端面试要找事？！/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/03/22/web前端笔记之JS（三）/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          啥玩意儿?这个前端面试要找事?
+          web前端笔记之JS（三）
         
       </div>
     </a>
