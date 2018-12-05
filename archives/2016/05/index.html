@@ -6,22 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://www.91xuqi.com">
-  <title>Chrome控制台报错汇总 | Xuqi&#39;s Blog</title>
+  <title>Archives: 2016/5 | Xuqi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前言  最近开始使用Chrome控制台检测代码错误，对于经常碰到的报错做一个汇总，免得每次遇到都要重新想一遍策略，错误原因，重复劳动，浪费时间。 由于不是每个错误都能碰到，以下仅列出个人写代码时经常碰到的报错，以及个人理解与解决办法。随着时间的增长，遇到其他错误时再更新。">
-<meta name="keywords" content="Chrome">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Chrome控制台报错汇总">
-<meta property="og:url" content="http://www.91xuqi.com/2017/07/28/Chrome控制台报错汇总/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Xuqi&#39;s Blog">
+<meta property="og:url" content="http://www.91xuqi.com/archives/2016/05/index.html">
 <meta property="og:site_name" content="Xuqi&#39;s Blog">
-<meta property="og:description" content="前言  最近开始使用Chrome控制台检测代码错误，对于经常碰到的报错做一个汇总，免得每次遇到都要重新想一遍策略，错误原因，重复劳动，浪费时间。 由于不是每个错误都能碰到，以下仅列出个人写代码时经常碰到的报错，以及个人理解与解决办法。随着时间的增长，遇到其他错误时再更新。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://www.91xuqi.com/2017/07/28/Chrome控制台报错汇总/guge.jpg">
-<meta property="og:updated_time" content="2018-12-04T11:13:46.147Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chrome控制台报错汇总">
-<meta name="twitter:description" content="前言  最近开始使用Chrome控制台检测代码错误，对于经常碰到的报错做一个汇总，免得每次遇到都要重新想一遍策略，错误原因，重复劳动，浪费时间。 由于不是每个错误都能碰到，以下仅列出个人写代码时经常碰到的报错，以及个人理解与解决办法。随着时间的增长，遇到其他错误时再更新。">
-<meta name="twitter:image" content="http://www.91xuqi.com/2017/07/28/Chrome控制台报错汇总/guge.jpg">
+<meta name="twitter:title" content="Xuqi&#39;s Blog">
   
     <link rel="alternative" href="/atom.xml" title="Xuqi&#39;s Blog" type="application/atom+xml">
   
@@ -151,222 +144,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Chrome控制台报错汇总" class="article article-type-post " itemscope="" itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Chrome控制台报错汇总
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/05/04/WEB-前端菜鸟，感觉很迷茫，该怎么做？/" class="archive-article-date">
+  	<time datetime="2016-05-04T12:58:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-04</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/05/04/WEB-前端菜鸟，感觉很迷茫，该怎么做？/">WEB 前端菜鸟，感觉很迷茫，该怎么做？</a>
     </h1>
   
 
-        
-        <a href="/2017/07/28/Chrome控制台报错汇总/" class="archive-article-date">
-  	<time datetime="2017-07-28T13:39:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/2017/07/28/Chrome控制台报错汇总/guge.jpg" alt="guge"><br>前言</p>
-<ul>
-<li>最近开始使用Chrome控制台检测代码错误，对于经常碰到的报错做一个汇总，免得每次遇到都要重新想一遍策略，错误原因，重复劳动，浪费时间。</li>
-<li>由于不是每个错误都能碰到，以下仅列出个人写代码时经常碰到的报错，以及个人理解与解决办法。随着时间的增长，遇到其他错误时再更新。<a id="more"></a>
-</li>
-</ul>
-<hr>
-<blockquote>
-<p><strong>1.Failed to execute ‘appendChild’ on ‘Node’: parameter 1 is not of type ‘Node’</strong></p>
-</blockquote>
-<p>在’节点’上执行函数’appendChild’失败：不是节点<br><strong>原因</strong>：要插入的内容不是节点，无法插入。<br><strong>解决办法</strong>：返回检查准备插入内容的节点属性。若要插入纯文本，请使用document.createTextNode()进行文本节点创建.</p>
-<blockquote>
-<p><strong>2.Invalid or unexpected token</strong></p>
-</blockquote>
-<p>无效的符号<br><strong>原因</strong>：多见于插入中文符号，如‘；’。<br><strong>解决办法</strong>：根据报错行提示，返回编辑器查找符号错误进行修改。</p>
-<blockquote>
-<p><strong>3.2 arguments required, but only 1 present.系列</strong><br>需要2个参数，当前只有1个参数</p>
-</blockquote>
-<p><strong>原因</strong>：函数方法中必需的参数没有写全。例如setAttribute(attr,val)，必需两个参数都写全。<br><strong>解决办法</strong>：检查所调用函数的所需参数值，填写完整。</p>
-<blockquote>
-<p><strong>4.XXX（变量名） is not defined</strong><br>变量没有被创建</p>
-</blockquote>
-<p><strong>原因</strong>：引用的变量名写错，或者在let及const声明，对变量初始化与赋值前引用了变量。<br><strong>解决办法</strong>：1.查找变量在环境中的位置，确保调用位于变量声明后<br>2.确认变量名没有打错；</p>
-<blockquote>
-<p><strong>5.Identifier XXX（变量名） has already been declared</strong><br>变量已经被声明</p>
-</blockquote>
-<p><strong>原因</strong>：变量名重复（使用var声明的话，不会出现此错误）。<br><strong>解决办法</strong>：换个变量名。</p>
-<blockquote>
-<p><strong>6.Assignment to constant variable</strong><br>给一个常量配值</p>
-</blockquote>
-<p><strong>原因</strong>：变量为const声明的常量，无法对常量值进行修改。<br><strong>解决办法</strong>：将const声明修改为let或var声明</p>
-<blockquote>
-<p><strong>7.Exception: DOMException: Blocked a frame with origin “null” from accessing a cross-origin frame.</strong><br>阻止了一个域为null的frame页面访问另一个域为null的页面</p>
-</blockquote>
-<p><strong>原因</strong>：打开本地页面时，页面中存在多个frame框架，造成了跨域访问<br><strong>解决办法</strong>：localhost访问本地页面</p>
-<hr>
-<p><code>不骄不躁，不忘初心，自律才能自由</code></p>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/weixin.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Chrome</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.91xuqi.com/2017/07/28/Chrome控制台报错汇总/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/08/19/TS中的Module/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          TS中的Module
-        
-      </div>
-    </a>
   
   
-    <a href="/2016/05/04/WEB-前端菜鸟，感觉很迷茫，该怎么做？/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">WEB 前端菜鸟，感觉很迷茫，该怎么做？</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -389,8 +220,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
