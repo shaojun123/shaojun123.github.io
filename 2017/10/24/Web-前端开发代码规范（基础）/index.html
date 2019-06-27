@@ -17,7 +17,7 @@
 <meta property="og:description" content="一、 引言对于一个多人团队来说，制定一个统一的规范是必要的，因为个性化的东西无法产生良好的聚合效果，规范化可以提高编码工作效率，使代码保持统一的风格，以便于代码整合和后期维护。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.91xuqi.com/2017/10/24/Web-前端开发代码规范（基础）/C7.jpg">
-<meta property="og:updated_time" content="2018-12-17T13:26:20.364Z">
+<meta property="og:updated_time" content="2019-06-26T12:47:46.364Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web 前端开发代码规范（基础）">
 <meta name="twitter:description" content="一、 引言对于一个多人团队来说，制定一个统一的规范是必要的，因为个性化的东西无法产生良好的聚合效果，规范化可以提高编码工作效率，使代码保持统一的风格，以便于代码整合和后期维护。">
@@ -258,7 +258,7 @@
 <li><p><code>#id1</code>也不需要由#id2来修饰。写成$(‘#id2 #id1’) 是画蛇添足，降低性能。</p>
 </li>
 </ol>
-<p><strong>——缓存JQuery对象</strong><br>要养成将jquery对象缓存进变量的习惯，避免进行多次查找，另外为了区分普通的JS对象和jQuery对象，建议在变量首字母前加上$符号。如:<br>要养成将jquery对象缓存进变量的习惯，避免进行多次查找，另外为了区分普通的JS对象和jQuery对象，建议在变量首字母前加上$符号。如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $box = $(<span class="string">'#wrap'</span>).find(<span class="string">'.box'</span>);</span><br><span class="line">$box.addClass(<span class="string">'class'</span>);</span><br><span class="line">$.ajax(&#123;</span><br><span class="line">   $box.html(<span class="string">'text'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p><strong>——缓存JQuery对象</strong><br>要养成将jquery对象缓存进变量的习惯，避免进行多次查找，另外为了区分普通的JS对象和jQuery对象，建议在变量首字母前加上$符号。如:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> $box = $(<span class="string">'#wrap'</span>).find(<span class="string">'.box'</span>);</span><br><span class="line">$box.addClass(<span class="string">'class'</span>);</span><br><span class="line">$.ajax(&#123;</span><br><span class="line">   $box.html(<span class="string">'text'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p><strong>——合理使用链式操作</strong><br>可以减少对DOM Tree的访问以及代码量。如代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'div'</span>).addClass(<span class="string">'className'</span>).html(<span class="string">'html code'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  alert(<span class="number">1</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p><strong>——使用子查询</strong><br>使用children(), find(), filter()来进行子查询。如代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'div p'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  ……</span><br><span class="line">&#125;); </span><br><span class="line"><span class="comment">// 上面替换成如下</span></span><br><span class="line">$(<span class="string">'div'</span>).find(<span class="string">'p'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  ……</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p><strong>——减少DOM操作</strong><br>当要进行DOM插入时，将所有元素在内存中封装成一个元素，一次性插入。<br><strong>——自定义数据属性</strong><br>dom结构上添加自定义属性：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"wrap"</span> data-foo=<span class="string">"123"</span>&gt;&lt;/div&gt; </span><br><span class="line"><span class="comment">// 取数据：</span></span><br><span class="line">$(<span class="string">'#wrap'</span>).data(<span class="string">'foo'</span>); </span><br><span class="line"><span class="comment">// 存数据：</span></span><br><span class="line">$(<span class="string">'#wrap'</span>).data(<span class="string">'foo'</span>, &#123;<span class="attr">a</span>:<span class="number">1</span>,<span class="attr">b</span>:<span class="number">2</span>&#125; );</span><br></pre></td></tr></table></figure></p>
@@ -544,19 +544,19 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">TS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Chrome</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">TS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -565,6 +565,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -577,10 +581,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -17,7 +17,7 @@
 <meta property="og:description" content="程序员 or 工程师11111111111111111111111111圈内对从事软件开发的同学有很多叫法，如程序员（Programmer）、开发者（Developer）、工程师（Engineer），甚至是码农，“码农”是圈内人用来自嘲的，那其他几个名词呢？表面上看起来都是做软件开发，叫什么真的重要么？">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.91xuqi.com/2019/01/07/前端工程师做事的三重境界/S0.jpg">
-<meta property="og:updated_time" content="2019-06-26T01:14:57.224Z">
+<meta property="og:updated_time" content="2019-06-26T12:48:02.756Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端工程师做事的三重境界">
 <meta name="twitter:description" content="程序员 or 工程师11111111111111111111111111圈内对从事软件开发的同学有很多叫法，如程序员（Programmer）、开发者（Developer）、工程师（Engineer），甚至是码农，“码农”是圈内人用来自嘲的，那其他几个名词呢？表面上看起来都是做软件开发，叫什么真的重要么？">
@@ -174,7 +174,7 @@
         <p><img src="/2019/01/07/前端工程师做事的三重境界/S0.jpg" alt="guge"></p>
 <h3 id="程序员-or-工程师11111111111111111111111111"><a href="#程序员-or-工程师11111111111111111111111111" class="headerlink" title="程序员 or 工程师11111111111111111111111111"></a>程序员 or 工程师11111111111111111111111111</h3><p>圈内对从事软件开发的同学有很多叫法，如<strong>程序员</strong>（Programmer）、<strong>开发者</strong>（Developer）、<strong>工程师</strong>（Engineer），甚至是码农，“码农”是圈内人用来自嘲的，那其他几个名词呢？表面上看起来都是做软件开发，叫什么真的重要么？<br><a id="more"></a></p>
 <p>不得不说，叫什么并不重要，不论是自称还是他称，什么学历、几年工作经验也不重要，真正重要的是人所具备的能力。那么既然名称不重要？为什么还要谈论它？名称的真正意义在于能让我积极拓宽自己的视野，不断点亮自己的技能树，在职业发展的道路上不断积累、不断提升。<br>工程师做事的三重境界是什么？程序员、开发者、工程师这些叫法跟这三重境界又有啥关系？</p>
-<h3 id="第-1-重境界：把事情做成"><a href="#第-1-重境界：把事情做成" class="headerlink" title="第 1 重境界：把事情做成"></a>第 1 重境界：把事情做成</h3><p>把事情做成是公司对员工的基本要求，绝大多数入门同学就处在这个境界，这个境界的人可称为程OI序员（Programmer），对于 Programmer 通常需要告诉他做什么、怎么做，他所需要的是执行力和基础技能，这里的技能包括：基本的编程技能，至少会一门编程语言，对这门语言的熟悉程度至少能够让他把基本需求解决。具体到前端领域，对 Programmer 的要求就是需要能够使用 JS、CSS、HTML，并且熟悉编辑器、浏览器来完成基本需求。<br>以常见的 WEB 端统计为例，为了研究页面关键元素的用户行为，需要对用户的部分交互添加事件统计（更常见的叫法是“埋点”），比如单击事件，表单提交事件，如果使用百度统计，在页面中埋点的方法大概如下：<br><code>&lt;a onclick=&quot;_hmt.push([&#39;_trackEvent&#39;, &#39;checkout&#39;, &#39;click&#39;]);&quot;&gt;购买&lt;/a&gt;</code></p>
+<h3 id="第-1-重境界：把事情做成"><a href="#第-1-重境界：把事情做成" class="headerlink" title="第 1 重境界：把事情做成"></a>第 1 重境界：把事情做成</h3><p>把事情做成是公司对员工的基本要求，绝大多数入门同学就处在这个境界，这个境界的人可称为程序员（Programmer），对于 Programmer 通常需要告诉他做什么、怎么做，他所需要的是执行力和基础技能，这里的技能包括：基本的编程技能，至少会一门编程语言，对这门语言的熟悉程度至少能够让他把基本需求解决。具体到前端领域，对 Programmer 的要求就是需要能够使用 JS、CSS、HTML，并且熟悉编辑器、浏览器来完成基本需求。<br>以常见的 WEB 端统计为例，为了研究页面关键元素的用户行为，需要对用户的部分交互添加事件统计（更常见的叫法是“埋点”），比如单击事件，表单提交事件，如果使用百度统计，在页面中埋点的方法大概如下：<br><code>&lt;a onclick=&quot;_hmt.push([&#39;_trackEvent&#39;, &#39;checkout&#39;, &#39;click&#39;]);&quot;&gt;购买&lt;/a&gt;</code></p>
 <p>或者在 JS 中埋点：<br><code>// 需要发送统计的时候_hmt.push([&#39;_trackEvent&#39;, &#39;checkout&#39;, &#39;click&#39;]);</code></p>
 <p>接下来由于业务需要，相同的统计，需要往 Google Analytics 发一份，最简单粗暴的解决方案如下：<br><code>&lt;aonclick=&quot;_hmt.push([&#39;_trackEvent&#39;, &#39;checkout&#39;, &#39;click&#39;]); _gaq.push([&#39;_trackEvent&#39;, &#39;checkout&#39;, &#39;click&#39;]);&quot;&gt;购买&lt;/a&gt;</code></p>
 <p>JS 中也需要做同样的修改：<br><code>// 需要发送统计的时候_hmt.push([&#39;_trackEvent&#39;, &#39;checkout&#39;, &#39;click&#39;]);_gaq.push([&#39;_trackEvent&#39;, &#39;checkout&#39;, &#39;click&#39;]);</code></p>
@@ -186,7 +186,7 @@
 <li>最后，前端代码风格，其实不太推荐在 HTML 中内联书写 JS 事件，这就是脏代码的典型例子；</li>
 </ul>
 <p>Developer 会如何解决这个问题呢？先理清楚埋点代码的本质：发送统计的动作、指定统计参数，其中发送统计的动作跟需要接入的统计平台有关，确保统计到达也跟这个动作有关，这个动作跟统计参数无关，而统计参数本身跟节点的关系比较紧密，动作和参数可以解耦开。<br>基于这样的认知，不难设计出下面的方案，在所有需要埋点的地方约定参数的标记方式，使用 data-event-* 参数标记事件名称、事件类型以及额外的参数：<br><code>&lt;a data-event-name=&#39;checkout&#39; data-event-type=&#39;click&#39;&gt;购买&lt;/a&gt;</code></p>
-<p>然后，在页面级别监听那些埋点的节点，并且恰当的时机发送统计代码，简化版如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 相同的参数发送给所有已接入的统计平台，如果平台不同，适配工作也在这里做const sendEventLog = (name, type, param) =&gt; &#123; </span></span><br><span class="line">_hmt.push([<span class="string">'_trackEvent'</span>, name, <span class="string">'click'</span>, param]); </span><br><span class="line">_gaq.push([<span class="string">'_trackEvent'</span>, name, <span class="string">'click'</span>, param]);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 针对单击事件的处理，其他事件可以类似处理</span></span><br><span class="line">$(body).on(<span class="string">'click'</span>, <span class="string">'[data-event-name][data-event-type="click"]'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line"> <span class="comment">// 拿到事件发生的节点 const target = $(e.target); </span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取事件属性</span></span><br><span class="line"> <span class="keyword">const</span> name = target.attr(<span class="string">'data-event-name'</span>); </span><br><span class="line"><span class="keyword">const</span> param = target.attr(<span class="string">'data-event-param'</span>) || <span class="string">''</span>; </span><br><span class="line"><span class="keyword">if</span> (!name) &#123;</span><br><span class="line"> <span class="keyword">return</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里如果是链接跳转，需要走单独的逻辑 </span></span><br><span class="line">sendEventLog(name, <span class="string">'click'</span>, param);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>然后，在页面级别监听那些埋点的节点，并且恰当的时机发送统计代码，简化版如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 相同的参数发送给所有已接入的统计平台，如果平台不同，适配工作也在这里做const sendEventLog = (name, type, param) =&gt; &#123; </span></span><br><span class="line">_hmt.push([<span class="string">'_trackEvent'</span>, name, <span class="string">'click'</span>, param]); </span><br><span class="line">_gaq.push([<span class="string">'_trackEvent'</span>, name, <span class="string">'click'</span>, param]);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 针对单击事件的处理，其他事件可以类似处理</span></span><br><span class="line">$(body).on(<span class="string">'click'</span>, <span class="string">'[data-event-name][data-event-type="click"]'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line"> <span class="comment">// 拿到事件发生的节点 const target = $(e.target); </span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 获取事件属性</span></span><br><span class="line"><span class="keyword">const</span> name = target.attr(<span class="string">'data-event-name'</span>); </span><br><span class="line"><span class="keyword">const</span> param = target.attr(<span class="string">'data-event-param'</span>) || <span class="string">''</span>; </span><br><span class="line"><span class="keyword">if</span> (!name) &#123;</span><br><span class="line"> <span class="keyword">return</span>; </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里如果是链接跳转，需要走单独的逻辑 </span></span><br><span class="line">sendEventLog(name, <span class="string">'click'</span>, param);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p>上面探讨了从 Programmer 进阶到 Developer 的方法就是积累，那么怎么积累？我行动的基本法则是：做出好的东西先要知道好的东西长啥样。一方面，多读经典的书，仔细读高质量的文章，注意这里面读远比收藏重要，上哪里去找经典的书和高质量的文章？这需要建立自己的信息筛选机制；另外一方面，遇到问题要学会去搜索，找更多的解决方案，然后比较，融会贯通。<br>不得不承认，从 Programmer 进阶到 Developer 需要非常多的努力和积累才行，但是精进之路永无止境，下面说说第三重境界。</p>
 <h3 id="第-3-重境界：把事情做绝"><a href="#第-3-重境界：把事情做绝" class="headerlink" title="第 3 重境界：把事情做绝"></a>第 3 重境界：把事情做绝</h3><p>能够把事情做绝的人，可以称得上是工程师（Engineer），那么到底怎么才算是把事情做绝？以统计埋点为例，能够洞悉埋点需求的本质，把日志发送和埋点标记解耦之后，将两者都做到极致。现实中埋点需求的来源通常是运营和产品经理，所有的变更基本都是由他们驱动，如果能够给他们提供工具管理页面中的埋点标记（思路关键词：XPath、微服务、浏览器插件，细节不在本文描述），就能把工程师从这种琐碎需求中解放出来去做更有意义的事情，这样也就改变了组织中不同员工间的协作方式，提高组织的效率。<br>想成为前端工程师，要先成为工程师。工程师应该具备怎样的能力？要回答这个问题，我们不妨仔细思考下什么是工程，WIKIPEDIA的原文如下：</p>
 <blockquote>
@@ -456,19 +456,19 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">TS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Chrome</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">TS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -477,6 +477,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -489,10 +493,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">面试</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
