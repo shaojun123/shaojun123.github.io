@@ -17,7 +17,7 @@
 <meta property="og:description" content="React 完全是关于 JavaScript 的。而且，有很多材料是关于 JavaScript 而不是 React。  其中大部分是 JavaScript ES6 及其特性和语法，还包括三元运算符、简化的语法、this 对象、JavaScript 内置函数（map、reduce、filter）或更一般的概念。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.91xuqi.com/2019/01/28/在开始React之前，JS这些知识点你学好了吗？/Z0.jpg">
-<meta property="og:updated_time" content="2019-06-28T13:55:57.079Z">
+<meta property="og:updated_time" content="2019-06-28T13:58:08.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在开始React之前，JS这些知识点你学好了吗？">
 <meta name="twitter:description" content="React 完全是关于 JavaScript 的。而且，有很多材料是关于 JavaScript 而不是 React。  其中大部分是 JavaScript ES6 及其特性和语法，还包括三元运算符、简化的语法、this 对象、JavaScript 内置函数（map、reduce、filter）或更一般的概念。">
@@ -175,7 +175,7 @@
 <blockquote>
 <p>React 完全是关于 JavaScript 的。而且，有很多材料是关于 JavaScript 而不是 React。</p>
 </blockquote>
-<p>其中大部分是 JavaScript ES6 及其特性和语法，还包括三元运算符、简化的语法、this 对象、JavaScript 内置函数（map、reduce、filter）或更一般的概念。<br><a id="more"></a><br>如可组合性、可重用性、不变性或高阶函数。在刚开始接触 React 之前，你可能不需要掌握这些基础知识，但在学习或实践过程中肯定需要用到它们。</p>
+<p>其中大部分是 JavaScript ES6 及其特性和语法，还包括三元运算符、简化的语法、this 对象、JavaScript 内置函数（map、reduce、filter）或更一般的概念。<br><a id="more"></a><br>如可组合性、可重用性、不变性或高阶函数。在刚开始接触React之前，你可能不需要掌握这些基础知识，但在学习或实践过程中肯定需要用到它们。</p>
 <h3 id="在开始-React-之前先学习-JavaScript"><a href="#在开始-React-之前先学习-JavaScript" class="headerlink" title="在开始 React 之前先学习 JavaScript"></a>在开始 React 之前先学习 JavaScript</h3><p>当你开始进入 React 的世界，create-react-app 通常会是你的第一个 React 项目。在搭建好项目后，你将看到下面的这个 React 类组件：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> logo <span class="keyword">from</span> <span class="string">'./logo.svg'</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">'./App.css'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> (</span><br><span class="line">      &lt;div className=<span class="string">"App"</span>&gt;</span><br><span class="line">        &lt;header className=<span class="string">"App-header"</span>&gt;</span><br><span class="line">          &lt;img src=&#123;logo&#125; className=<span class="string">"App-logo"</span> alt=<span class="string">"logo"</span> /&gt;</span><br><span class="line">          &lt;h1 className=<span class="string">"App-title"</span>&gt;Welcome to React&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">        &lt;/</span>header&gt;</span><br><span class="line">        &lt;p className=<span class="string">"App-intro"</span>&gt;</span><br><span class="line">          To get started, edit &lt;code&gt;src/App.js&lt;<span class="regexp">/code&gt; and save to reload.</span></span><br><span class="line"><span class="regexp">        &lt;/</span>p&gt;</span><br><span class="line">      &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">    );</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure></p>
 <p>React 类组件可能不是最好的入手点。新手有许多东西需要消化，不一定与 React 有关：类语句、类方法和继承。导入语句也会在学习 React 时增加额外的复杂性。尽管主要焦点应该放在 JSX（React 的语法）上，但其他的东西也需要解释一番。这篇文章主要针对 JavaScript，所以请不用太担心 React 相关的内容。</p>
 <h3 id="React-和-JavaScript-类"><a href="#React-和-JavaScript-类" class="headerlink" title="React 和 JavaScript 类"></a>React 和 JavaScript 类</h3><p>关于 React 类组件，需要用到有关 JavaScript 类的先验知识。JavaScript 类的概念相对较新。之前，只有 JavaScript 的原型链可用于实现继承。JavaScript 类以原型继承为基础，让继承体系变得更简单。</p>
@@ -515,19 +515,19 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Chrome</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">TS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Chrome</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">TS</a>
               </li>
              
               <li class="article-tag-list-item">
